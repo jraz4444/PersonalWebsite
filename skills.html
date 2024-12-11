@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<a href="homepage.html" id="homeLink">Home</a> <!-- Link to the home page -->
+<body>
+    <style>
+        /* Base Styles */
+        body {
+            font-family: Arial, sans-serif;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Light Mode */
+        body.light-mode {
+            background-color: white;
+            color: black;
+        }
+
+        /* Dark Mode */
+        body.dark-mode {
+            background-color: #121212;
+            color: white;
+        }
+
+        /* Sepia Mode */
+        body.sepia-mode {
+            background-color: #f4ecd8;
+            color: #5b4636;
+        }
+
+        .theme-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .theme-switcher select {
+            padding: 5px;
+        }
+    </style>
+</head>
+<body class="light-mode">
+    <div class="theme-switcher">
+        <label for="themeSelector">Choose Theme:</label>
+        <select id="themeSelector" onchange="changeTheme()">
+            <option value="light-mode">Light Mode</option>
+            <option value="dark-mode">Dark Mode</option>
+            <option value="sepia-mode">Sepia Mode</option>
+        </select>
+    </div>
+
+
+    <script>
+        // Check if a theme was previously selected
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            document.body.className = savedTheme;
+            document.getElementById('themeSelector').value = savedTheme;
+        }
+
+        function changeTheme() {
+            const selectedTheme = document.getElementById('themeSelector').value;
+            document.body.className = selectedTheme;
+            localStorage.setItem('theme', selectedTheme);
+        }
+    </script>
+<h1>Skills</h1>
+<li>Python</li>
+<span class="skill-name" style="font-size: 20px; font-weight: bold;line-height: 2.0;">Being able to Compete in Competitive Programming Competition</span>
+<div class="skill-description">Proficient in using Python for problem solving and data analysis and visualization such as matplotlib.</div>
+        <li>JavaScript</li>
+        <span class="skill-name" style="font-size: 20px; font-weight: bold;line-height: 2.0;">Create games from scratch using JavaScript</span>
+        <div class="skill-description">Proficient in using Javasript for data and attribute to be able to build games.</div>
+        <li>HTML & CSS</li>
+        <span class="skill-name" style="font-size: 20px; font-weight: bold;line-height: 2.0;">Web Site Development</span>
+            <div class="skill-description">Proficient in using HTML & CSS for building my website.</div>
+        <li>ADA(come back to)</li>
+        <span class="skill-name">Create games from scratch using JavaScript</span>
+            <div class="skill-description">Proficient in using Javasript for data and attribute to be able to build games.</div>
+        <li>Flex / Bison(come back to)</li>
+        <span class="skill-name">Create games from scratch using JavaScript</span>
+            <div class="skill-description">Proficient in using Javasript for data and attribute to be able to build games.</div>
+        <li>NumPy(come back to)</li>
+        <span class="skill-name">Create games from scratch using JavaScript</span>
+            <div class="skill-description">Proficient in using Javasript for data and attribute to be able to build games.</div>
+        <li>PyTorch(come back to)</li>
+        <span class="skill-name">Create games from scratch using JavaScript</span>
+            <div class="skill-description">Proficient in using Javasript for data and attribute to be able to build games.</div>
+        <li>Java(come back to)</li>
+        <span class="skill-name">Create games from scratch using JavaScript</span>
+            <div class="skill-description">Proficient in using Javasript for data and attribute to be able to build games.</div>
+        <li>Clisp(come back to)</li>
+        <span class="skill-name">Create games from scratch using JavaScript</span>
+            <div class="skill-description">Proficient in using Javasript for data and attribute to be able to build games.</div>
+        <li>Haskell(come back to)</li>
+        <span class="skill-name">Create games from scratch using JavaScript</span>
+            <div class="skill-description">Proficient in using Javasript for data and attribute to be able to build games.</div>
+        <li>Fortran(come back to)</li>
+        <span class="skill-name">Create games from scratch using JavaScript</span>
+            <div class="skill-description">Proficient in using Javasript for data and attribute to be able to build games.</div>
+        <li>Bash Script & Python Script(come back to)</li>
+        <li>C++</li>
+        <span class="skill-name"style="font-size: 20px; font-weight: bold; line-height:2.0" >Algorithms & Data Structures</span>
+            <div class="skill-description">Be able to use different sorts & searches to find the quickest one</div>
+        <li>C#</li>
+        <span class="skill-name" style="font-size: 20px; font-weight: bold;line-height: 2.0;">Backend Development of App</span>
+        <div class="skill-description">Work on a team to develop an app</div>
+        <li>C(come back to)</li>
+        <span class="skill-name">Create games from scratch using JavaScript</span>
+            <div class="skill-description">Proficient in using Javasript for data and attribute to be able to build games.</div>
+        <li>R(come back to)</li>
+        <span class="skill-name">Create games from scratch using JavaScript</span>
+            <div class="skill-description">Proficient in using Javasript for data and attribute to be able to build games.</div>
+        <li>Git & GitHub</li>
+        <span class="skill-name" style="font-size: 20px; font-weight: bold;line-height: 2.0;">Experienced in Git & GitHub </span>
+            <div class="skill-description" >Understand branching and merging as well as be able to collobrate on GitHub.</div>
+        <li>VSCode</li>
+        <span class="skill-name" style="font-size: 20px; font-weight: bold;line-height: 2.0;">VSCode Shortcuts and Commands</span>
+            <div class="skill-description">Running programs with terminal or debugger and switching between languages as well as knowing the correct extensions.</div>
+</body>
+</html>
